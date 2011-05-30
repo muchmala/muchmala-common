@@ -1,0 +1,1 @@
+exports.puzzleGenerator = require('./lib/generator');
