@@ -13,9 +13,10 @@
  }
 , "dependencies" :
  { "canvas" : "~0"
- , "opts" : "~1"
+ , "optimist" : "~0"
  , "async" : "~0"
  , "underscore" : "~1"
+ , "flow" : "~0"
  }
 , "bin" :
  { "generate-puzzle" : "./bin/generator.js"
