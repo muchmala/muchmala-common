@@ -7,6 +7,7 @@
    , "Taras Kunch <taras.kunch@gmail.com>"
    , "George Miroshnykov <george.miroshnykov@gmail.com>"
    ]
+, "main" : "index.js"
 , "repository":
  { "type" : "git"
  , "url" : "https://github.com/muchmala/muchmala-common.git"
