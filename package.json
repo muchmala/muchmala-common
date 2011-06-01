@@ -17,6 +17,7 @@
  , "async" : "~0"
  , "underscore" : "~1"
  , "flow" : "~0"
+ , "knox" : "~0"
  }
 , "bin" :
  { "generate-puzzle" : "./bin/generator.js"
