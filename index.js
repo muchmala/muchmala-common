@@ -1,4 +1,4 @@
 exports.puzzleGenerator = require('./lib/generator');
 exports.db = require('./lib/db');
-exports.s3client = require('./lib/s3client');
+exports.storage = require('./lib/storage');
 exports.logger = require('./lib/logger');
