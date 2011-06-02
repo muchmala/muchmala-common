@@ -1,4 +1,7 @@
-exports.puzzleGenerator = require('./lib/generator');
-exports.db = require('./lib/db');
-exports.storage = require('./lib/storage');
-exports.logger = require('./lib/logger');
+module.exports = {
+    puzzleGenerator: require('./lib/generator'),
+    db: require('./lib/db'),
+    storage: require('./lib/storage'),
+    logger: require('./lib/logger'),
+    misc: require('./lib/misc')
+};
