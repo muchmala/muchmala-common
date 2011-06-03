@@ -10,11 +10,11 @@ This package contains all common stuff of Muchamla:
 
 ## Documentation
 
-### `muchamlaCommon.db` (database models)
+### muchamlaCommon.db (database models)
 
 Contains all Muchmala models and some helper methods.
 
-#### `connect(options, callback)`
+#### connect(options, callback)
 
 Establishes connection to mongoDB.
 
@@ -43,7 +43,7 @@ Example
         console.log("Connection is established");
     });
 
-#### `generateId()`
+#### generateId()
 
 Generates new ObjectId and returns it's string representation.
 
@@ -53,25 +53,25 @@ Example
 
     var newId = db.generateId();
 
-#### `Sessions`
+#### Sessions
 
 User sessions model
 
-#### `Puzzles`
+#### Puzzles
 
 Puzzles model
 
-#### `Users`
+#### Users
 
 Users model
 
-### `muchamlaCommon.puzzleGenerator` (puzzle generator)
+### muchamlaCommon.puzzleGenerator (puzzle generator)
 
 Creates puzzle map and covers.
 
-#### `createPuzzle(imagePath, options, callback)`
+#### createPuzzle(imagePath, options, callback)
 
-Generates puzzle map and sprites for puzzle from image `imagePath`
+Generates puzzle map and sprites for puzzle from image imagePath
 
     imagePath       path to image
     options {
@@ -104,7 +104,7 @@ Example
         console.log("Puzzle is created: " + metadata);
     });
 
-#### `createCovers(size, callback)`
+#### createCovers(size, callback)
 
 Creates three covers for puzzle of given size.
 
@@ -128,7 +128,7 @@ Example
         console.log("Covers are created: " + metadata);
     });
 
-#### `validators.append(newValidator)`
+#### validators.append(newValidator)
 
 Appends new validator to validators list.
 All the validators are executed after loading image. If one fails, image processing is stopped.
@@ -148,7 +148,7 @@ Example
         callback();
     });
 
-#### `validators.getWidthValidator(minWidth, maxWidth)`
+#### validators.getWidthValidator(minWidth, maxWidth)
 
 Returns validator to accept images only of given width.
 
@@ -163,7 +163,7 @@ Example
         puzzleGenerator.validators.getWidthValidator(800, 1024);
     );
 
-#### `validators.getHeightValidator(minHeight, maxHeight)`
+#### validators.getHeightValidator(minHeight, maxHeight)
 
 Returns validator to accept images only of given height.
 
@@ -178,11 +178,11 @@ Example
         puzzleGenerator.validators.getHeightValidator(800, 1024);
     );
 
-### `muchamlaCommon.storage` (puzzle storage)
+### muchamlaCommon.storage (puzzle storage)
 
 Abstraction layer over different types of storage (like file storage, amazon s3, etc)
 
-#### `createStorage(type, options, callback)`
+#### createStorage(type, options, callback)
 
 Factory. Creates storage of given type
 
@@ -229,11 +229,11 @@ Example
         });
     });
 
-### `muchamlaCommon.logger`
+### muchamlaCommon.logger
 
 Logger with option of setting log level.
 
-#### `setLevel(level)`
+#### setLevel(level)
 
 Sets logging level
 
@@ -254,14 +254,14 @@ Example
     logger.warning('warning'); //is printed
     logger.error('error'); //is printed
 
-#### `debug(var[,var[, ...]])`
-#### `info(var[,var[, ...]])`
-#### `warning(var[,var[, ...]])`
-#### `error(var[,var[, ...]])`
+#### debug(var[,var[, ...]])
+#### info(var[,var[, ...]])
+#### warning(var[,var[, ...]])
+#### error(var[,var[, ...]])
 
-### `muchamlaCommon.misc` (some misc functions)
+### muchamlaCommon.misc (some misc functions)
 
-#### `deepExtend(object1, object2)`
+#### deepExtend(object1, object2)
 
 Extends object1 with object2
 
@@ -292,6 +292,6 @@ Example
     //};
 
 
-#### `getUniqueString()`
+#### getUniqueString()
 
 Returns unique string
