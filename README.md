@@ -206,6 +206,21 @@ Factory. Creates storage of given type
             callback(err, exists)  function, triggered when check is done
                 exists   boolean flag. If true, then file exists
 
+        storage.listDir(path, callback)  lists directory
+            path             (string) path to file in storage
+            callback(err, contents)  function, triggered when check is done
+                contents     object with files and folders under path in following format:
+                            { files:
+                               { 'qwe.jpg':
+                                  { path: 'qwe.jpg',
+                                    change: Wed, 01 Jun 2011 15:18:57 GMT,
+                                    size: 279092 } },
+                              dirs:
+                               { asd: { path: 'asd/' },
+                                 covers: { path: 'covers/' },
+                                 puzzles: { path: 'puzzles/' } } }
+
+
 Example
 
     var storage = require('muchmala-common').storage;

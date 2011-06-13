@@ -1,5 +1,5 @@
 { "name" : "muchmala-common"
-, "version" : "0.0.2"
+, "version" : "0.0.3"
 , "description" : "Common (shared) stuff for Muchmala"
 , "homepage" : "https://github.com/muchmala/muchmala-common"
 , "contributors" :
@@ -22,5 +22,6 @@
  , "underscore" : "~1"
  , "flow" : "~0"
  , "knox" : "~0"
+ , "xml2js" : "~0"
  }
 }
