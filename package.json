@@ -1,5 +1,5 @@
 { "name" : "muchmala-common"
-, "version" : "0.0.3"
+, "version" : "0.0.4"
 , "description" : "Common (shared) stuff for Muchmala"
 , "homepage" : "https://github.com/muchmala/muchmala-common"
 , "contributors" :
@@ -17,7 +17,7 @@
  , "rq" : "~0"
  , "optimist" : "~0"
 
- , "canvas" : "~0"
+ , "canvas" : "0.5.4"
  , "async" : "~0"
  , "underscore" : "~1"
  , "flow" : "~0"
